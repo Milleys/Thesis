@@ -1,0 +1,42 @@
+/* Ensure the html and body take the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content should grow to fill space */
+main {
+    flex-grow: 1; /* Fills available space and pushes footer down */
+}
+
+/* Footer styling */
+footer {
+    background-color: #BFD28E;
+    padding: 15px 0;
+    width: 100%;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Social Media Icons */
+.social-icons .social-icon {
+    width: 24px;
+    height: auto;
+}
+
+/* Ensure social icons are displayed properly */
+.text-end {
+    text-align: right;
+}
+
+ul.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+footer p, footer ul {
+    margin: 0;
+}

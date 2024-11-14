@@ -1,0 +1,42 @@
+/* Custom styles for the main content */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image Styling */
+.report-image img {
+    max-width: 100%;
+}
+
+/* Legend Styling */
+.legend {
+    width: 200px;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Adjust the legend list items */
+.legend ul li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .legend {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .col-lg-10 {
+        flex-direction: column; /* Stack the image and legend vertically on small screens */
+    }
+
+    .legend {
+        text-align: center;
+    }
+}

@@ -1,0 +1,70 @@
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Center the register form vertically and horizontally */
+.register-container {
+    width: 100%;               /* Responsive width */
+    max-width: 400px;           /* Set max width for the register form */
+    height: 700px;
+    padding: 20px;              /* Add padding inside */
+    border-radius: 40px;        /* Rounded corners */
+    border: 1px solid #ccc;     /* Thin, light grey border */
+    border-color: #145315;
+    background-color: #f8f9fa;  /* Light background color */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Center text for the register heading */
+.register-container h2 {
+    color: #1B7019;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.register-container h5 {
+    color: #1B7019;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* register button styling */
+.btn-register {
+    background-color: #1B7019;
+    border-color: #1B7019;
+    color: white;
+}
+
+/* Hover effect for register button */
+.btn-register:hover {
+    background-color: #145315;
+    border-color: #145315;
+    color: #d8d8d8;
+}
+
+.text-center a {
+    text-decoration: none;
+    color: #145315; /* Keep the text color the same as surrounding text */
+    font-weight: bold;
+}
+
+.text-center a:hover {
+    color: inherit;  /* Ensure the color doesn't change on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+.form-label i {
+    margin-right: 5px;      /* Add spacing between icon and text */
+    color: #1B7019;         /* Set the icon color to match the theme */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .register-container {
+        padding: 15px;
+    }
+}

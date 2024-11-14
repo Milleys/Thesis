@@ -1,0 +1,125 @@
+/* Navbar adjustments*/
+header {
+    background-color: #BFD28E !important;
+    padding: 10px 0; /* Adjust padding to control height */
+    width: 100%; /* Ensure the header spans the full width */
+    position: relative;
+}
+
+.container {
+    max-width: 1600px; /* Adjust the max width to suit your needs */
+    margin: 0 auto;    /* Center the container horizontally */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* CSS for the header logos */
+.header-logo {
+    max-width: 150px; /* Smaller logo size for compactness */
+    height: auto;
+}
+
+.header-logo-center {
+    width: 450px; /* Increase the size to make it more prominent */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust the title font size and color */
+h1 {
+    color: #056839;
+    font-weight: bold;
+    letter-spacing: 1px; /* Add some letter spacing for a cleaner look */
+}
+/* Flex grow ensures that the logo, title, and tagline take up as much space as possible */
+.flex-grow-1 {
+    flex-grow: 1;
+}
+p {
+    font-size: 0.875rem;
+    color: #056839; /* Ensure visibility */
+    margin-top: 0; /* Reduce margin to align more closely with the title */
+}
+
+/* Style the Register button */
+.btn-success {
+    background-color: #1B7019;
+    border-color: #056839;
+    padding: 10px;
+    font-size: 18px;    /* Larger text */
+    width: 153px;       /* Set fixed width */
+    height: 52px;       /* Set fixed height */
+
+}
+
+.btn-success:hover {
+    background-color: #045c31;
+    border-color: #045c31;
+}
+
+/* Ensure elements align and stay on the same row */
+.d-flex {
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+/* Navigation Links Style*/
+/* Style for the navigation bar links */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;        /* Remove default margin */
+    padding: 0;       /* Remove default padding */
+    display: flex;    /* Display nav items horizontally */
+    align-items: center; /* Vertically align the nav items */
+}
+
+/* Style each nav link */
+nav ul li {
+    margin-right: 20px; /* Space between the nav items */
+}
+
+/* Link styles */
+.nav-link {
+    color: #056839; /* Link text color (use your desired color) */
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    font-size: 1.1rem; /* Adjust size as needed */
+    padding: 8px 12px; /* Add padding around the link */
+    transition: background-color 1s ease, color 4s ease; /* Smooth transition on hover */
+    border-radius: 18px;        /* Rounded corners */
+}
+
+/* Hover effect for nav links */
+.nav-link:hover {
+    background-color: #7ae992; /* Light background color on hover */
+    border-radius: 20px;        /* Rounded corners */
+    color: #1B7019;            /* Change color on hover */
+}
+
+/* Active nav link style (for the current page) */
+.nav-link.active {
+    color: white;
+    background-color: #1B7019; /* Make active link stand out */
+    border-radius: 20px;        /* Rounded corners for active link */
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Adjust the logo and button size for smaller screens */
+    .header-logo {
+        max-width: 60px;
+    }
+
+    header h1 {
+        font-size: 1.25rem; /* Adjust font size for smaller screens */
+    }
+
+    header p {
+        font-size: 0.75rem; /* Smaller tagline font size */
+    }
+
+    .btn-success {
+        font-size: 0.875rem; /* Smaller button text */
+    }
+}
