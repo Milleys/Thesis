@@ -1,4 +1,4 @@
-<header class="py-3">
+<header class="py-3" style="background-color: #BFD28E;">
     <div class="container d-flex justify-content-between align-items-center">
         <!-- Logo Section with Title and Tagline -->
         <div class="d-flex justify-content-center align-items-center flex-grow-1">

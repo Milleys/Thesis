@@ -142,7 +142,7 @@ include "chart.php";
 <body>
 
     <!-- HEADER nav bar start -->
-    <?php include 'header.php'; ?>
+    <?php include 'new_header.php'; ?>
     <!-- HEADER nav bar end -->
 
     <!-- main content start -->

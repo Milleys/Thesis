@@ -84,7 +84,7 @@ if (!isset($_SESSION['Username']) || empty($_SESSION['Username'])) {
 <body>
 
     <!-- HEADER nav bar start -->
-    <?php include 'header.php'; ?>
+    <?php include 'new_header.php'; ?>
     <!-- HEADER nav bar end -->
 
     <!-- Main content start -->
