@@ -190,7 +190,7 @@ include "chart.php";
                         </form>
                     </div>
                 </div>
-                <div class="legend mt-4">
+                <div class="legend mt-4 w-50">
                     <h5>Legend</h5>
                     <ul class="list-unstyled">
                         <li><span style="color: green;">●</span> Minor</li>

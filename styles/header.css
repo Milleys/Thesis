@@ -6,10 +6,16 @@
 
 
 .nav-link{
+    /*
     padding: 15px;
     font-size: 14px;
     font-weight: normal;
     font-family: Arial;
+    */
+    font-size: 0.85rem;
+    color: #000;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    padding: 15px;
     border-right: .01px solid rgb(241, 241, 241);
 }
 
@@ -26,3 +32,7 @@
  
 }
 
+.continer-fluid{
+    height: 500.5px;
+    background-color: #BFD28E;
+}

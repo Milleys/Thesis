@@ -12,7 +12,7 @@
 <body>
     <header class="py-2" style = "background-color: white;">
         <nav class="navbar navbar-expand-lg" >
-            <div class="container">
+            <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -49,34 +49,37 @@
 
                 <!-- Navigation Links for Admin -->
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto ">
-                        <li class="nav-item ">
-                            <a class="nav-link text-black fw-4 fs-6 active"  href="#">GOVPH</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link text-black px-4 active"  href="home.php">Home</a>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-black fw-bold fs-6 active" href="#">LLDA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black  px-4"  href="status.php">Status</a>
+                            <a class="nav-link text-black px-4 active" href="home.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black  px-4" href="repositories.php">Repositories</a>
+                            <a class="nav-link text-black px-4" href="status.php">Status</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black px-4" href="repositories.php">Repositories</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black px-4" href="report.php">Report</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black  px-4" href="admin.php">Accounts</a>
+                            <a class="nav-link text-black px-4" href="admin.php">Accounts</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black  px-4" href="user_history.php">History</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-danger px-4" data-bs-toggle="modal" data-bs-target="#logoutModal" style="cursor: pointer;" onmouseover="this.style.color='red'" onmouseout="this.style.color=''" >Logout</a>
-
+                            <a class="nav-link text-black px-4" href="user_history.php">History</a>
                         </li>
                     </ul>
+                    <!-- Logout Link -->
+                    <a class="nav-link text-danger px-4 ms-auto" data-bs-toggle="modal" data-bs-target="#logoutModal" 
+                        style="cursor: pointer;" 
+                        onmouseover="this.style.color='red'" 
+                        onmouseout="this.style.color=''" 
+                    >Logout</a>
                 </div>
+
 
                 <?php
                 } else if (@$usertype != "admin") {
@@ -84,33 +87,39 @@
 
                 <!-- Navigation Links for Non-admin -->
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto ">
-                        <li class="nav-item ">
-                            <a class="nav-link text-black px-4 active" style="border-left: .1px solid rgb(241, 241, 241);" href="home.php">Home</a>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-black fw-bold fs-6 active" href="#">LLDA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black  px-4"  href="status.php">Status</a>
+                            <a class="nav-link text-black px-4 active" href="home.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black  px-4" href="repositories.php">Repositories</a>
+                            <a class="nav-link text-black px-4" href="status.php">Status</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black px-4" href="repositories.php">Repositories</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black px-4" href="report.php">Report</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-danger  px-4" data-bs-toggle="modal" data-bs-target="#logoutModal" style="cursor: pointer;">Logout</a>
-                        </li>
                     </ul>
+                    <!-- Logout Link -->
+                    <a class="nav-link text-danger px-4 ms-auto" data-bs-toggle="modal" data-bs-target="#logoutModal" 
+                        style="cursor: pointer;" 
+                        onmouseover="this.style.color='red'" 
+                        onmouseout="this.style.color=''" 
+                    >Logout</a>
                 </div>
 
                 <?php } ?>
             </div> 
         </nav>
-        <div class="container-fluid py-5 d-flex justify-content-center align-items-center" style="background-color: #BFD28E;">
-            <img src="assets/llda-logo-21.png" alt="LLDA Logo" class="header-logo mx-3">
-            <img src="assets/updated-logo-v-5-no-bilog-10.png" alt="Text Logo" class="header-logo-center mx-3">
-            <img src="assets/bagong-pinas-10.png" alt="PH Logo" class="header-logo mx-3">
+        <div class="container-fluid d-flex justify-content-center align-items-center" style="background-color: #BFD28E; height: 179.5px;">
+            <img src="assets/full-header-llda.png" alt="LLDA Logo" class="img-fluid mx-3" style="max-height: 150px;">
+            
         </div>
+
 
 
 
