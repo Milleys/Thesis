@@ -89,10 +89,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-black fw-bold fs-6 active" href="#">LLDA</a>
+                            <a class="nav-link text-black fw-bold fs-6" href="#">LLDA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black px-4 active" href="home.php">Home</a>
+                            <a class="nav-link text-black px-4" href="home.php">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black px-4" href="status.php">Status</a>
