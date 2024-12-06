@@ -77,7 +77,7 @@ if (isset($_POST["Retrain"])) {
             $total_columns = $response['total_columns'];
             
         } else {
-            echo "<p>Error: " . htmlspecialchars($response['error']) . "</p>";
+            echo "<script type='text/javascript'>alert('". htmlspecialchars($response['error']) ."');</script>";
         }
     } else {
         echo "<p>No dataset selected.</p>";
